@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        padding-top: 58px;
+        min-height: 100vh;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+
+      .company-name {
+        color: #fff;
+        font-size: 20px;
+        margin-right: 733px;
+      }
+
+      header {
+        background-color: #488a99;
+        color: #fff;
+        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav {
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        align-items: center; /* Align vertically centered */
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      nav ul li {
+        margin-right: 20px;
+        margin-bottom: 10px; /* Add margin-bottom to create row gap */
+      }
+
+      nav ul li:last-child {
+        margin-right: 0;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s ease;
+      }
+      nav a.active {
+        color: #00ff0d;
+      }
+
+      nav a:hover {
+        color: #00ff0d;
+      }
+
+      footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #488a99;
+        color: white;
+        text-align: center;
+      }
+
+      section {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #00ff0d;
+      }
+
+      form {
+        margin-top: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        background-color: #488a99;
+        color: #fff;
+        cursor: pointer;
+      }
+    </style>
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="company-name">Prodigy InfoTech</div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <section>
+        <h2>Get in Touch</h2>
+        <p>Feel free to reach out to me using the contact form below:</p>
+
+        <form action="#" method="post">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Neeraj Sharma. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
